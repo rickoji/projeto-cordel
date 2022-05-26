@@ -50,18 +50,32 @@ section{
     font-family: var(--font3);
     font-size: 1.2em;
 }
-.normal{
-    background-color:#fff;
-    color:rgb(0, 0, 0);
+section > p{
+    padding: 2em;
 }
-.imagem{
+section.normal{
+    background-color:#fff;
+    color:rgba(0, 0, 0, 0.719);
+}
+section.imagem{
     background-color:gray;
     color:#fff;
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.568);
+    background-size: cover;
+    background-attachment: fixed;
 
 }
-.imagem > p{
-    background-color: rgba(0, 0, 0, 0.205);
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.5);
     width:400px;
+    text-shadow: 1px 1px 0 black;
+}
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
 }
 footer{
     background-color:black;
